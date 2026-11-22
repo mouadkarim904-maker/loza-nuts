@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LOZA Nuts — مكسرات وفواكه جافة بجودة مختارة. التوصيل لجميع مدن المغرب.">
+  <title>LOZA Nuts | مكسرات وفواكه جافة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><img src="images/loza-logo.png" alt="LOZA Nuts"></a>
+  <nav><a href="#products" data-i18n="navProducts">المنتجات</a><a href="#about" data-i18n="navAbout">من نحن</a><a href="#contact" data-i18n="navContact">اتصل بنا</a></nav>
+  <div class="tools"><select id="language" aria-label="Language"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select><button class="cart-button" id="cartOpen">🛒 <span data-i18n="cart">السلة</span> <b id="cartCount">0</b></button></div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy"><span class="eyebrow" data-i18n="eyebrow">طبيعة نقية.. طاقة كل يوم</span><h1 data-i18n="heroTitle">الذوق الطبيعي<br><em>في كل حبة</em></h1>
+  <p data-i18n="heroText">اكتشف تشكيلة LOZA من المكسرات والفواكه الجافة، مغلفة بعناية لترافق أجمل لحظاتك.</p>
+  <a class="primary" href="#products" data-i18n="shopNow">تسوق الآن</a><div class="delivery-note">🚚 <span data-i18n="delivery">التوصيل لجميع مدن المغرب — الثمن حسب المدينة</span></div></div>
+  <div class="hero-image"><img src="images/cashew.jpg" alt="كاجو LOZA"></div>
+</section>
+<section class="trust-strip"><div>🌿 <span data-i18n="fresh">اختيار بعناية</span></div><div>📦 <span data-i18n="pack">تغليف أنيق</span></div><div>🇲🇦 <span data-i18n="allMorocco">توصيل في المغرب</span></div></section>
+<section class="section" id="products"><div class="section-heading"><div><span class="eyebrow" data-i18n="collection">تشكيلة LOZA</span><h2 data-i18n="productsTitle">منتجاتنا</h2></div><input id="search" type="search" placeholder="ابحث عن منتج..." data-i18n-placeholder="search"></div>
+  <div class="filters"><button class="filter active" data-filter="all" data-i18n="all">الكل</button><button class="filter" data-filter="nuts" data-i18n="nuts">مكسرات</button><button class="filter" data-filter="seeds" data-i18n="seeds">زريعة</button><button class="filter" data-filter="snacks" data-i18n="snacks">تسالي</button></div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+<section class="promo"><div><span class="eyebrow" data-i18n="special">اختيارات LOZA</span><h2 data-i18n="promoTitle">شارك لحظاتك بطعم مميز</h2><p data-i18n="promoText">اختار الوزن والنكهة المناسبة ليك، وطلبك يوصل حتى لباب دارك.</p></div><a class="outline" href="#products" data-i18n="discover">اكتشف المنتجات</a></section>
+<section class="section about" id="about"><div><span class="eyebrow" data-i18n="ourStory">قصتنا</span><h2 data-i18n="aboutTitle">لماذا LOZA؟</h2><p data-i18n="aboutText">في LOZA نهتم باختيار المكسرات والفواكه الجافة وتقديمها في أكياس عملية وأنيقة. هدفنا نوفر لك مذاقاً تحبه وتجربة طلب سهلة.</p><p class="quote">“طبيعة نقية.. طاقة كل يوم”</p></div><img src="images/loza-logo.png" alt="شعار LOZA"></section>
+<section class="section reviews"><span class="eyebrow" data-i18n="reviewsEyebrow">رأيكم يهمنا</span><h2 data-i18n="reviewsTitle">آراء الزبائن</h2><p data-i18n="reviewsText">قريباً نشارك هنا تجارب زبائن LOZA الحقيقية.</p><small data-i18n="reviewsNote">التقييمات ستضاف بعد الحصول على آراء العملاء.</small></section>
+<section class="contact" id="contact"><div><span class="eyebrow" data-i18n="contactEyebrow">نحن قريبون منك</span><h2 data-i18n="contactTitle">تواصل مع LOZA</h2><p data-i18n="contactText">المقر: دار بوعزة، المغرب. التوصيل متاح لجميع مدن المملكة، ومصاريفه حسب المدينة.</p></div><div class="contact-links"><a href="https://wa.me/212779258966" target="_blank" rel="noopener">WhatsApp · +212 779 258 966</a><a href="https://www.instagram.com/loza.ma_" target="_blank" rel="noopener">Instagram · @loza.ma_</a><a href="https://www.facebook.com/profile.php?id=61595489676974" target="_blank" rel="noopener">Facebook · LOZA</a><a href="mailto:mouadfr238@gmail.com">mouadfr238@gmail.com</a></div></section>
+</main>
+<footer>© <span id="year"></span> LOZA Nuts & Dried Fruits — <span data-i18n="rights">جميع الحقوق محفوظة</span></footer>
+<div class="drawer-backdrop" id="backdrop"></div><aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2 data-i18n="yourCart">سلة المشتريات</h2><button id="cartClose" aria-label="Close">✕</button></div><div id="cartItems"></div><div class="cart-total"><span data-i18n="subtotal">المجموع</span><strong id="cartTotal">0 DH</strong></div>
+<form id="orderForm"><h3 data-i18n="orderDetails">معلومات الطلب</h3><input name="customer" required placeholder="الاسم الكامل" data-i18n-placeholder="customer"><input name="phone" required type="tel" placeholder="رقم الهاتف" data-i18n-placeholder="phone"><input name="city" required placeholder="المدينة" data-i18n-placeholder="city"><textarea name="address" placeholder="العنوان بالتفصيل (اختياري)" data-i18n-placeholder="address"></textarea><p class="shipping-hint" data-i18n="shippingHint">مصاريف التوصيل تُحدد حسب المدينة وتُؤكد عبر WhatsApp.</p><button class="primary full" type="submit" data-i18n="sendOrder">إرسال الطلب عبر WhatsApp</button></form></aside>
+<script src="script.js"></script>
+</body></html>
